@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A photography app about five different continents, includes America,Asia,Europe,Oceania,Antarctica"
+    />
+    <meta
+      name="keywords"
+      content="photography, america, asia, antarctica, europe, oceania, landscapes, nature"
+    />
+    <meta name="author" content="mete karaca" />
+    <title>Colossal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.webp" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script/continentbtn.js"></script>
+    <script defer src="script/mainpart.js"></script>
+    <script defer src="script/startingstate.js"></script>
+  </head>
+  <body>
+    <!-- OVERLAY-->
+    <div class="overlay disp__none">&nbsp;</div>
+    <!-- STARTING DİV-->
+    <!-- STARTING DİV-->
+    <div class="starting">
+      <div class="starting__logo">
+        <img
+          src="img/logo.png"
+          alt="website logo"
+          class="starting__logo__img"
+        />
+      </div>
+      <h1 class="starting__header">Colossal Presents</h1>
+      <p class="starting__p">
+        This is a photography app with photos from five different continents
+      </p>
+      <p class="starting__sub">Press "Enter" or click button to go</p>
+      <button class="starting__btn">&rarr;</button>
+    </div>
+    <!-- STARTING DIV ENDS-->
+    <!-- STARTING DIV ENDS-->
+    <header class="navigation">
+      <div class="navigation__logo">
+        <img src="img/logo.png" alt="Logo of Website" />
+      </div>
+      <nav class="navigation__nav">
+        <ul class="navigation__container">
+          <li><a class="navigation__link" href="#">blog</a></li>
+          <li><a class="navigation__link" href="#">about</a></li>
+          <li>
+            <a class="navigation__link" href="mailto:metekaraca23@yahoo.com"
+              >mail</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTINENTS MENU STARTS HERE-->
+    <!-- CONTINENTS MENU STARTS HERE-->
+    <div class="bottombar__continent continent__display">
+      <button class="bottombar__cross">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="cross__btn"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <div class="bottombar__continents continent__asia" continent="0">
+        <figure class="bottombar__continents__img continent__asia__img">
+          &nbsp;
+        </figure>
+        <span class="bottombar__continents__text">asian</span>
+      </div>
+      <div class="bottombar__continents continent__america" continent="1">
+        <figure class="bottombar__continents__img continent__america__img">
+          &nbsp;
+        </figure>
+        <span class="bottombar__continents__text">american</span>
+      </div>
+      <div class="bottombar__continents continent__antarctica" continent="2">
+        <figure class="bottombar__continents__img continent__antarctica__img">
+          &nbsp;
+        </figure>
+        <span class="bottombar__continents__text">antarctican</span>
+      </div>
+      <div class="bottombar__continents continent__europe" continent="3">
+        <figure class="bottombar__continents__img continent__europe__img">
+          &nbsp;
+        </figure>
+        <span class="bottombar__continents__text">european</span>
+      </div>
+      <div class="bottombar__continents continent__oceania" continent="4">
+        <figure class="bottombar__continents__img continent__oceania__img">
+          &nbsp;
+        </figure>
+        <span class="bottombar__continents__text">oceanian</span>
+      </div>
+    </div>
+    <!-- CONTINENTS MENU ENDS HERE-->
+    <!-- CONTINENTS MENU ENDS HERE-->
+    <main class="main">
+      <!-- PHOTO PLACE STARTS HERE-->
+      <!-- PHOTO PLACE STARTS HERE-->
+      <button class="chev__left chevs">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="chev__left chevs"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="chev__right chevs">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="chev__right chevs"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="gallery">
+        <figure class="gallery__element">&nbsp;</figure>
+      </div>
+      <!-- PHOTO PLACE ENDS HERE-->
+      <!-- PHOTO PLACE ENDS HERE-->
+      <!-- BOTTOM BAR STARTS HERE-->
+      <!-- BOTTOM BAR STARTS HERE-->
+      <div class="bottombar">
+        <div class="bottombar__trait trait__name">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="bottombar__icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+            />
+          </svg>
+
+          <span class="bottombar__trait__text text__name"></span>
+        </div>
+        <div class="bottombar__trait trait__menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="bottombar__icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <p class="bottombar__trait__text text__continent">continents</p>
+        </div>
+
+        <div class="bottombar__trait trait__location">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="bottombar__icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+            />
+          </svg>
+
+          <span class="bottombar__trait__text text__location"></span>
+        </div>
+      </div>
+      <!-- BOTTOM BAR ENDS HERE-->
+    </main>
+  </body>
+</html>

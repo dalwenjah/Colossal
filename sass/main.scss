@@ -1,0 +1,45 @@
+.gallery {
+  position: relative;
+  max-width: 130rem;
+  overflow: hidden;
+  height: 70vh;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+  &__element {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    transition: all 0.25s linear;
+    border-radius: 2rem;
+    background-size: cover;
+  }
+}
+
+.chev__right {
+  right: 0;
+}
+.chev__left {
+  left: 0;
+}
+.chevs {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  height: 7rem;
+  width: 7rem;
+  border: none;
+  background-color: transparent;
+
+  @media screen and(max-width: 82.18em) {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  svg {
+    color: var(--color-text-primary);
+  }
+}

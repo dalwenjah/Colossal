@@ -1,0 +1,11 @@
+@keyframes popUpClose {
+  0% {
+    height: 100%;
+    display: block;
+  }
+
+  100% {
+    transform: translateY(-500%);
+    display: none;
+  }
+}
